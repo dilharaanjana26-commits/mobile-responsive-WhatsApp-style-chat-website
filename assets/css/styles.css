@@ -1,0 +1,40 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.chat-bubble {
+    max-width: 80%;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.chat-bubble.user {
+    background: #dcf8c6;
+    align-self: flex-end;
+}
+
+.chat-bubble.admin {
+    background: #ffffff;
+    align-self: flex-start;
+}
+
+.dark .chat-bubble.user {
+    background: #1f7a37;
+    color: #ffffff;
+}
+
+.dark .chat-bubble.admin {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+.message-meta {
+    font-size: 0.7rem;
+    margin-top: 0.25rem;
+    opacity: 0.7;
+}
